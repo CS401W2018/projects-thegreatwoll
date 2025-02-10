@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(204081.jpg)rgb(35, 35, 54);
+}
+
+header {
+    color: azure;
+    background: url(ai-wave.png) right no-repeat;
+    /*
+    background-image: url(smaller.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    */
+}
+
+.list {
+    list-style-image: url(surf-icon-ai.png);
+    color: aliceblue;
+}
+
+.enga {
+    background-color: azure;
+}
+
+.ans {
+    background-color: azure;
+}
