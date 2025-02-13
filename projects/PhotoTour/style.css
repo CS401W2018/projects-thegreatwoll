@@ -1,0 +1,29 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(paper.jpg);
+    color: rgb(90, 27, 27);
+
+}
+
+header {
+    background-image: url(byuh.png);
+    background-position: right;
+    height: 100px;
+    background-repeat: no-repeat;
+}
+
+.navi {
+    font-weight: bolder;
+    color: brown;
+}
+
+.list {
+    list-style-image: url(bullet.png);
+    
+}
+
+.navi2 {
+    color: rgb(255, 85, 0);
+}
+
+
