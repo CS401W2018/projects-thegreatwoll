@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    display: block;
+    background-color: bisque;
+    padding: 10px;
+}
+
+.parent {
+    background-color: aquamarine;
+    display: flex;
+    /*gap: 10px;*/
+    /*flex-direction: row;
+    /*row is defualt*/
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
+}
+
+.child {
+    background-color: rgb(255, 123, 0);
+    width: 100px;
+}
+
+.feature {
+    order: -1
+}
+
+.que {
+    font-weight: bolder;
+}
