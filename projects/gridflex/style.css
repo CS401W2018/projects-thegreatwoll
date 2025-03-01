@@ -1,0 +1,122 @@
+body {
+    background-color: rgb(195, 203, 209);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "head head head"
+    "nav nav nav"
+    "side content content"
+    "foot foot foot";
+}
+
+header{grid-area: head;}
+nav{grid-area: nav;}
+aside{grid-area: side;}
+main{grid-area: content;}
+footer{grid-area: foot;}
+
+header {
+    background-color: rgb(22, 21, 21);
+    padding: 10px;
+    
+}
+
+header h1 {
+    background-color: rgb(72, 72, 72);
+    text-shadow: 5px 2px 7px black;
+    margin: 5px;
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    color: aliceblue;
+}
+
+main {
+    display: grid;
+}
+
+main h2{
+    font-size: 30px;
+    margin: 20px auto 0px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav {
+    height: 60px;
+    padding: 3px;
+    background-color: azure;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a{
+    background-color: rgba(246, 210, 184, 0.107);
+    display: block;
+    margin: 5px;
+    text-align: center;
+    align-content: center;
+    width: 200px;
+    box-shadow: 2px 2px 4px rgb(125, 125, 125);
+    color: brown;
+}
+
+aside {
+    margin: 0 30px 0 auto;
+    padding: 20px;
+    background-color: rgb(169, 172, 175);
+}
+
+aside p {
+   text-align: justify;
+}
+
+footer {
+    display: grid;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+}
+
+.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+
+}
+
+.links a {
+    color: black;
+}
+
+.carousel h3 {
+    margin: 5px;
+}
+
+.carousel p {
+    margin: 5px;
+}
+
+.carousel img {
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel {
+    box-shadow: 1px 1px 8px black;
+    width: 400px;
+    margin: 20px;
+    background-color: white;
+}
