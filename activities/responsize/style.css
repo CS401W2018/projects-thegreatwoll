@@ -56,3 +56,31 @@ nav a:hover {
 .que {
     font-weight: bold;
 }
+
+@media ONLY screen AND (max-width: 925px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .mainc {
+        order: -1;
+    }
+}
+
+@media ONLY screen AND (max-width: 450px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+        width: 100%;
+    }
+}
