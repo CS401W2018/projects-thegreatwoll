@@ -73,7 +73,7 @@ nav a:hover {
     width: 100%;
 }
 
-.aside figcaption {
+.aside p {
     text-align: left;
     margin: 13px;
 }
@@ -207,7 +207,7 @@ figure img {
         width: 100%;
     }
     
-    aside figcaption {
+    aside p {
         text-align: justify;
         margin: 13px;
     }
