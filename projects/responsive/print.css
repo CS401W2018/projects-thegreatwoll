@@ -14,7 +14,7 @@ body {
 
 header {grid-area: head;}
 nav {grid-area: nav;}
-aside {grid-area: side;}
+.aside {grid-area: side;}
 main {grid-area: main;}
 footer {grid-area: footer;}
 
@@ -34,24 +34,24 @@ nav {
     display: none;
 }
 
-aside {
+.aside {
     background-color: #423730;
 }
 
-aside h2 {
+.aside h2 {
     margin: 10px;
 }
 
-aside figure img {
+.aside figure img {
     width: 100%;
 }
 
-aside figcaption {
+.aside figcaption {
     text-align: justify;
     margin: 13px;
 }
 
-aside ul li {
+.aside ul li {
     margin-right: 13px;
     text-align: justify;
     margin-bottom: 5px;
