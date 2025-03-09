@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #BEB8AF;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "side main main"
+    "footer footer footer";
+    height: 100%;
+}
+
+header{grid-area: header;}
+nav{grid-area: nav;}
+aside{grid-area: side;}
+main{grid-area: main;}
+footer{grid-area: footer;}
+
+header {
+    background-color: #261e1d;
+    color: #BEB8AF;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+
+nav {
+    background-color: #423730;
+    height: 40px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+nav a {
+    background-color: #423730;
+    color: #BEB8AF;
+    display: flex;
+    width: 20%;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #4f1c0d;
+    color: #BEB8AF;
+    display: flex;
+    width: 20%;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+aside {
+    background-color: #575047;
+    color: #f3f0ec;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    width: 100%;
+    margin: 0px;
+}
+
+.sidebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+}
+
+.sidebox img {
+    width: 100%;
+    border: solid 3px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 15px;
+}
+
+article img {
+    width: 300px;
+}
+
+article figcaption {
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+}
+
+main h2 {
+    padding: 10px;
+}

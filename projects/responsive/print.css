@@ -1,0 +1,95 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-areas: "head head head"
+                         "nav nav nav"
+                         "side main main"
+                         "footer footer footer"
+}
+
+header {grid-area: head;}
+nav {grid-area: nav;}
+aside {grid-area: side;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+header {
+    background-color: #261E1D;
+    height: 55px;
+    display: flex;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 10px;
+    align-content: center;
+}
+
+nav {
+    display: none;
+}
+
+aside {
+    background-color: #423730;
+}
+
+aside h2 {
+    margin: 10px;
+}
+
+aside figure img {
+    width: 100%;
+}
+
+aside figcaption {
+    text-align: justify;
+    margin: 13px;
+}
+
+aside ul li {
+    margin-right: 13px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+footer {
+    display: none;
+}
+
+main {
+    margin: 10px 15px;
+}
+
+main h2 {
+    margin: 0px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content article {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+article p {
+    text-align: justify;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+figure img {
+    width: 100%;
+}
