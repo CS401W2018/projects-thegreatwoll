@@ -194,25 +194,25 @@ figure img {
         font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
     
-    aside {
+    .aside {
         order: 1;
         background-color: #423730;
     }
     
-    aside h2 {
+    .aside h2 {
         margin: 10px;
     }
     
-    aside figure img {
+    .aside figure img {
         width: 100%;
     }
     
-    aside p {
+    .aside p {
         text-align: justify;
         margin: 13px;
     }
     
-    aside ul li {
+    .aside ul li {
         margin-right: 13px;
         text-align: justify;
         margin-bottom: 5px;
