@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+        <h2>Tables</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Number</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="5">Winter 2025</th>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td rowspan="2">140</td>
+                    <td>11:00AM - 11:50AM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>12:00PM - 12:50PM</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>210</td>
+                    <td>1:00PM - 1:50PM</td>
+                    <td>P1</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>320</td>
+                    <td>2:00PM - 2:50PM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th colspan="5" id="spring2025">Spring 2025</th>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>210</td>
+                    <td>1:00PM - 1:50PM</td>
+                    <td>P1</td>
+                    <td>3</td>
+                </tr>
+            </tbody> 
+            <tfoot>   
+                <tr>
+                    <th id="totalcredits" colspan="4">Total Credits</th>
+                    <td headers="totalcredits">15</td>
+                </tr>
+            </tfoot>
+        </table>
+        <br>
+        <hr>
+        <br>
+        <h2>Engagement Activity</h2>
+        <p class="que">
+            When do you use a table?
+        </p>
+        <p>
+            We use a table on our webpage when we have a data that we want to present or show. Example of data could be numbers, schedules, names, etc. Anything that should be displayed in rows and columns.
+        </p>
+        <p class="que">
+            When do you not use a table?
+        </p>
+        <p>
+            We do not use tables in our webpage's HTML for the purpose of layouts. Tables are not flexible and are not good to use when we are trying to create a responsive webpage. They can be used but it may disrupt the idea of creating a unified responsive webpage.
+        </p>
+        <p class="que">
+            When do you need to do extra work for table accessibility?
+        </p>
+        <p>
+            We do extra work in making our tables accessible when we are trying to tie data within the tables to headers in the vertical axis or columns. We will have to create an ID for the cell in the column and connect it to the cell that contains the data.
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Errol Jon Rosaroso</p>
+    </footer>
+</body>
+</html>
