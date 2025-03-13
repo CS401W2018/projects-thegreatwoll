@@ -1,3 +1,58 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.schedule {
+    border: thin solid black;
+    width: 100%;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.511);
+    caption-side:   bottom;
+    border-spacing: 0;
+    border-collapse: collapse;
+    
+}
+
+.schedule .cred {
+    background-color: yellow;
+}
+
+.schedule th, .schedule td {
+    /* border: thin solid black; */
+    padding: 5px;
+    /* background-color: rgb(224, 218, 218); */
+}
+
+caption {
+    margin: 5px;
+}
+
+.schedule th {
+    background-color: aquamarine;
+}
+
+.schedule thead th {
+    background-color: black;
+    color: white;
+    /* border-color: white; */
+}
+
+.schedule tfoot th {
+    background-color: black;
+    color: white;
+}
+
+.schedule tbody tr {
+    border-bottom: thin solid black;
+}
+
+.schedule tbody tr:nth-child(even) {
+    background-color: blue;
+}
+
+main p::first-letter {
+    color: red;
+}
+
+.que {
+    font-weight: bold;
+}

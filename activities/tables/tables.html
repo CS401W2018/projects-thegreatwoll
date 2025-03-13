@@ -18,7 +18,10 @@
     </nav>
     <main>
         <h2>Tables</h2>
-        <table border="1">
+        <table class="schedule">
+            <caption>
+                Class Schedule
+            </caption>
             <thead>
                 <tr>
                     <th>Department</th>
@@ -37,27 +40,27 @@
                     <td rowspan="2">140</td>
                     <td>11:00AM - 11:50AM</td>
                     <td>P2</td>
-                    <td>3</td>
+                    <td class="cred">3</td>
                 </tr>
                 <tr>
                     <td>CS</td>
                     <td>12:00PM - 12:50PM</td>
                     <td>P3</td>
-                    <td>3</td>
+                    <td class="cred">3</td>
                 </tr>
                 <tr>
                     <td>CS</td>
                     <td>210</td>
                     <td>1:00PM - 1:50PM</td>
                     <td>P1</td>
-                    <td>3</td>
+                    <td class="cred">3</td>
                 </tr>
                 <tr>
                     <td>CS</td>
                     <td>320</td>
                     <td>2:00PM - 2:50PM</td>
                     <td>P2</td>
-                    <td>3</td>
+                    <td class="cred">3</td>
                 </tr>
                 <tr>
                     <th colspan="5" id="spring2025">Spring 2025</th>
@@ -67,18 +70,22 @@
                     <td>210</td>
                     <td>1:00PM - 1:50PM</td>
                     <td>P1</td>
-                    <td>3</td>
+                    <td class="cred">3</td>
                 </tr>
             </tbody> 
             <tfoot>   
                 <tr>
                     <th id="totalcredits" colspan="4">Total Credits</th>
-                    <td headers="totalcredits">15</td>
+                    <th headers="totalcredits">15</th>
                 </tr>
             </tfoot>
         </table>
         <br>
         <hr>
+        <br>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus blanditiis deserunt provident repellat ab, architecto eum voluptatum ex unde sunt. Ipsa quos sapiente obcaecati doloribus. Laudantium excepturi odit corrupti alias?
+        </p>
         <br>
         <h2>Engagement Activity</h2>
         <p class="que">
@@ -98,6 +105,21 @@
         </p>
         <p>
             We do extra work in making our tables accessible when we are trying to tie data within the tables to headers in the vertical axis or columns. We will have to create an ID for the cell in the column and connect it to the cell that contains the data.
+        </p>
+        <br>
+        <hr>
+        <br>
+        <p class="que">
+            Why don't we use the border attribute?
+        </p>
+        <p>
+            We do not use the border attribute in our HTML because it is a depricated function or way of modifying tables in our web page. It may also lead to errors when it comes to the validity of our HTML.
+        </p>
+        <p class="que">
+            What is the easiest way to color every other row a different color?
+        </p>
+        <p>
+            The best way to accomplish this is by using the sudo function nth-child(even) on the table row tags in our CSS.
         </p>
     </main>
     <footer>
