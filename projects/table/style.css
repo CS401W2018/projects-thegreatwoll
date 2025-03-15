@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(239, 239, 235);
+}
+
+/* HEADER MODS */
+
+header h1 {
+    margin: 0;
+    text-transform:uppercase;
+}
+
+header {
+    margin: 0;
+    background-color: rgb(224, 37, 46);
+    color: white;
+    padding: 10px;
+    background-image: url(captain.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 400px;
+}
+
+
+/* NAV MODS */
+
+nav {
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a:hover {
+    width: 100%;
+    color: white;
+    background-color: rgb(203,54,61);
+    text-decoration: none;
+    text-align: center;
+}
+
+/* CONTENT BODY MODS */
+
+.content {
+    display: flex;
+}
+
+/* MAiN PAGE MODS */
+
+main {
+    flex-grow: 1;
+    justify-items: center;
+    padding: 20px 10px;
+}
+
+
+/* TABLE MODS */
+
+.mesa {
+    border: thin solid black;
+    border-spacing: 0;
+    border-collapse: collapse;
+    caption-side: bottom;
+    background-color:rgb(227, 234, 202);
+    margin-top: 30px;
+    font-size: larger;
+    box-shadow: 3px 3px 15px gray;
+}
+
+.mesa caption {
+    margin-top: 20px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mesa th, .mesa td {
+    border: thin solid black;
+    padding: 10px;
+}
+
+.mesa th {
+    background-color: rgb(2, 122, 84);
+    color: rgb(208, 230, 234);
+    font-size: larger;
+}
+
+.mesa tbody tr:nth-child(even) {
+    background-color: aquamarine;
+}
+
+
+/* SIDEBAR MODS */
+
+.sidebar {
+    background-color: rgb(203,54,61);
+    width: 20%;
+    padding: 0 10px;
+    color: white;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* FOOTER MODS */
+
+
+footer p {
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(208, 230, 234);
+}
