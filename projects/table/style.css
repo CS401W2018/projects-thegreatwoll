@@ -111,6 +111,15 @@ figcaption {
     text-align: center;
 }
 
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+figure img {
+    width: 100%;
+}
 /* FOOTER MODS */
 
 
