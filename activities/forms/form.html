@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+        <h2>Tables in Webpages</h2>
+        <form action="processing.html" method="get">
+            <div class="form-row">
+                <label for="fname">Full Name: </label>
+                <input type="text" name="fullname" id="fname" value="Errol Jon">
+            </div>
+            <div class="form-row">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="your@email.com">
+            </div>
+            <div class="form-row">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <div class="form-row">
+                <label for="state">State:</label> 
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="CO">Colorado</option>
+                    <option value="PH">Philippines</option>
+                    <option value="HI" selected>Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <div>Year in School:</div>
+                <label><input type="radio" name="year" value="freshman">Freshman</label>
+                <label><input type="radio" name="year" value="sophomore">Sophomore</label>
+                <label><input type="radio" name="year" value="junior">Junior</label>
+                <label><input type="radio" name="year" value="senior">Senior</label>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </form>
+        <hr>
+        <div>
+            <h2>Engagement Activity</h2>
+            <p class="que">The form tag has an "action" attribute. What does it do?</p>
+            <p>
+                The action attribute contains the source or the link to the page that we want to load once we submit the form that the user fills up on our page.
+            </p>
+            <p class="que">The form tag has a "method" attribute. What does it do?</p>
+            <p>
+                The method attribute allows us to select whether the form in our webpage will follow a get request or a post request when processing the data.
+            </p>
+            <p class="que">What is the difference between a "POST" and a "GET"?</p>
+            <p>
+                We use a POST request when we want to change information or data in the server with the use of the forms we have set up in our webpage. A GET request is used when all that we want to do is to read data, for example in a search engine, which allows us to share the specific data we requested to others.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Errol Jon Rosaroso</p>
+    </footer>
+</body>
+</html>
