@@ -5,3 +5,67 @@ body {
 .que {
     font-weight: bold;
 }
+
+.form-row {
+    display: flex;
+    margin: 10px 0;
+    gap: 10px ;
+}
+
+.form-row input:not([type="submit"]) {
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aquamarine;
+}
+
+.form-row input:not([type="submit"]):focus {
+    background-color: white;
+}
+
+.form-row input[type="submit"] {
+    padding: 10px;
+    background-color: aliceblue;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.form-spacer {
+    width: 150px;
+    text-align: right;
+}
+
+.radio-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+fieldset {
+    background-color: rgb(202, 251, 255);
+}
+
+legend {
+    background-color: aliceblue;
+    font-weight: bold;
+    padding: 5px;
+    border: solid;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    .form-row, .radio-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+
+    .form-spacer {
+        text-align: left;
+    }
+}

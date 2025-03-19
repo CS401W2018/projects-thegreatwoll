@@ -19,38 +19,50 @@
     <main>
         <h2>Tables in Webpages</h2>
         <form action="processing.html" method="get">
-            <div class="form-row">
-                <label for="fname">Full Name: </label>
-                <input type="text" name="fullname" id="fname" value="Errol Jon">
-            </div>
-            <div class="form-row">
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" placeholder="your@email.com">
-            </div>
-            <div class="form-row">
-                <label for="password">Password: </label>
-                <input type="password" name="password" id="password" required>
-            </div>
-            <div class="form-row">
-                <label for="state">State:</label> 
-                <select name="state" id="state">
-                    <option value="blank"></option>
-                    <option value="CO">Colorado</option>
-                    <option value="PH">Philippines</option>
-                    <option value="HI" selected>Hawaii</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <div>Year in School:</div>
-                <label><input type="radio" name="year" value="freshman">Freshman</label>
-                <label><input type="radio" name="year" value="sophomore">Sophomore</label>
-                <label><input type="radio" name="year" value="junior">Junior</label>
-                <label><input type="radio" name="year" value="senior">Senior</label>
-            </div>
-            <div class="form-row">
-                <input type="submit">
-            </div>
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name: </label>
+                    <input type="text" name="fullname" id="fname" value="Errol Jon">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="your@email.com">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label> 
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="CO">Colorado</option>
+                        <option value="PH">Philippines</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="remember" id="remember">Remember Me</label>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" value="freshman">Freshman</label>
+                    <label><input type="radio" name="year" value="sophomore">Sophomore</label>
+                    <label><input type="radio" name="year" value="junior">Junior</label>
+                    <label><input type="radio" name="year" value="senior">Senior</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments">Previous Comment</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
         </form>
         <hr>
         <div>
@@ -66,6 +78,15 @@
             <p class="que">What is the difference between a "POST" and a "GET"?</p>
             <p>
                 We use a POST request when we want to change information or data in the server with the use of the forms we have set up in our webpage. A GET request is used when all that we want to do is to read data, for example in a search engine, which allows us to share the specific data we requested to others.
+            </p>
+            <h2>Part 2</h2>
+            <p class="que">What are different ways to style your form?</p>
+            <p>
+                There are different ways for us to style forms in our webpages. We can use CSS Grid, Float, or Flex among others.
+            </p>
+            <p class="que">Why does the professor like to use flex?</p>
+            <p>
+                The professor likes to use Flex because it is a lot more convenient when we are trying to make things fit or work when we switch devices. With a little to few adjustments, we can create forms that can work in multiple devices.
             </p>
         </div>
     </main>
