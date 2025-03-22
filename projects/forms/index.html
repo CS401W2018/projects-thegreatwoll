@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CLEAN KICKS</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Register</a>
+    </nav>
+    <main>
+        <form action="homepage.html" method="get">
+            <fieldset class="register">
+                <legend><h2>Customer Registration</h2></legend>
+                <div class="form-row">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname">
+                </div>
+                <div class="form-row">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname">
+                </div>
+                <div class="form-row">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="radio-row">
+                    <div class="space">Gender:</label></div>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+            </fieldset>
+            <fieldset class="contact">
+                <legend><h2>Contact Information</h2></legend>
+                <div class="form-row">
+                    <label for="addressone">Address Line 1:</label>
+                    <input type="text" name="addressone" id="addressone">
+                </div>
+                <div class="form-row">
+                    <label for="addresstwo">Address Line 2:</label>
+                    <input type="text" name="addresstwo" id="addresstwo">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Telephone:</label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+            </fieldset>
+            <fieldset class="schedule">
+                <legend><h2>Schedule a Service</h2></legend>
+                <div class="form-row">
+                    <label for="service">Type of Service:</label>
+                    <select name="service" id="service">
+                        <option value="blank">-Select One-</option>
+                        <option value="dry">Dry Clean</option>
+                        <option value="deep">Deep Clean</option>
+                        <option value="wash">Shampoo Wash</option>
+                        <option value="sole">Sole Replacement</option>
+                        <option value="odor">Deodorize</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="datetime">Pickup Date:</label>
+                    <input type="date" name="datetime" id="datetime">
+                </div>
+                <div class="form-row">
+                    <label for="datetime">Preferred Time:</label>
+                    <input type="time" name="datetime" id="datetime"></label>
+                </div>
+            </fieldset>
+            <div class="agreement">
+                <div class="check-row">
+                    <div class="checkspace"></div>
+                    <label><input type="checkbox">I agree that my information may be stored and used for business processing and purposes.</label>
+                </div>
+            </div>
+            <div class="reviewsec">
+                <h3>Leave a review!</h3>
+                <div class="review-row">
+                    <label for="review">Review:</label>
+                    <textarea name="review" id="review"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="space"></div>
+                    <input type="submit">
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Errol Jon Rosaroso</p>
+    </footer>
+</body>
+</html>
