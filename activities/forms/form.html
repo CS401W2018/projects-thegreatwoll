@@ -18,7 +18,7 @@
     </nav>
     <main>
         <h2>Tables in Webpages</h2>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
@@ -32,6 +32,10 @@
                 <div class="form-row">
                     <label for="password">Password: </label>
                     <input type="password" name="password" id="password" required>
+                </div>
+                <div class="form-row">
+                    <label for="age">Age: </label>
+                    <input type="number" name="age" id="age">
                 </div>
                 <div class="form-row">
                     <label for="state">State:</label> 
@@ -88,10 +92,57 @@
             <p>
                 The professor likes to use Flex because it is a lot more convenient when we are trying to make things fit or work when we switch devices. With a little to few adjustments, we can create forms that can work in multiple devices.
             </p>
+            <h2>Part 3</h2>
+            <p class="que">What is JavaScript? How did it get its name?</p>
+            <p>
+                JavaScript is a programming language used in developing web pages together with CSS and HTML that adds other functions or interactivity. It was developed by Sun Microsystems which owned Java and they wanted to be known as the web company so they named the programming language JavaScript.
+            </p>
+            <p class="que">What are the two ways you can run JavaScript?</p>
+            <p>
+                The first way to run JavaScript is by the DOM or Document Object Model which runs in the context of a webpage. The second way is through Node.js
+            </p>
+            <p class="que">What was the most popular front-end js library?</p>
+            <p>
+                Before, the most popular front-end js library was jQuery.
+            </p>
+            <p class="que">What is the most popular front-end js library today?</p>
+            <p>
+                Currently, the most popular js library is React.js.
+            </p>
         </div>
     </main>
     <footer>
         <p>&copy; 2025 Errol Jon Rosaroso</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event) {
+            event.preventDefault();
+            // alert('Form Submitted');
+
+            const fullname = document.getElementById('fname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const age = document.getElementById('age').value;
+
+            if (!fullname || !email) {
+                alert('You need a name and email.');
+                return;
+            }
+
+            if (!age|| age <18) {
+                alert('You need to be 18 years old.');
+                return;
+            }
+
+            const formData = {
+                name: fullname,
+                email: email,
+                password: password,
+                age: age
+            };
+
+            console.log(formData);
+        });
+    </script>
 </body>
 </html>
