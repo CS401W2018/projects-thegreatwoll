@@ -1,0 +1,252 @@
+/* BODY */
+body {
+    background-color: rgb(220, 219, 219);
+    box-shadow: inset 5px 5px 100px rgb(182, 182, 182);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* NAV */
+nav {
+    background-color: rgb(17, 17, 17);
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav a:hover {
+    background-color: rgb(38, 38, 38);
+}
+.current {
+    font-weight:bolder;
+    background-color: rgb(65, 65, 67);
+}
+
+/* HEADER */
+header {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header h1 {
+    font-size: 150px;
+    margin: 0;
+}
+header figure {
+    order: -1;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+}
+header p {
+    margin: 0;
+    padding: 0 10px;
+    color: rgba(73, 73, 73, 0.377);
+    font-size: 35px;
+}
+
+/* MAIN */
+.space {
+    height: 23px;
+}
+main {
+    margin: 20px;
+}
+.mission, .vision {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.mission p, .vision p {
+    width: 70%;
+}
+.missionvision {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+.mission h2, .vision h2 {
+    font-size: 40px;
+    text-shadow: 2px 2px 5px rgba(128, 128, 128, 0.559);
+}
+
+.history {
+    display: flex;
+    align-items: center;
+}
+.originstory {
+    width: 60%;
+    font-size:20px;
+    padding: 0 50px 0;
+    background-color: rgba(121, 117, 117, 0.393);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px gray;
+    margin: 0 50px 0 0;
+}
+.history figure {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.history img {
+    margin: 0;
+}
+.credits {
+    font-size:small ;
+}
+.credits a {
+    text-decoration: none;
+}
+.titlehistory {
+    font-size: 35px;
+}
+
+/* TABLE */
+.pricingtable, .subplans {
+    border: 2px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    color: aliceblue;
+    box-shadow: 3px 3px 10px gray;
+    width: 70%;
+}
+thead tr {
+    background-color: rgb(0, 0, 0);
+}
+.pricingtable tbody tr:nth-child(even),.subplans tbody tr:nth-child(even){
+    background-color: rgb(1, 7, 31);
+}
+td, th {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px;
+    font-size: 25px;
+}
+tr {
+    background-color: rgb(17, 17, 17);
+}
+.maintable {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+tfoot td{
+    text-align: center;
+}
+
+/* ABOUT US */
+.textbox {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.textbox p {
+    text-align: center;
+    width: 50%;
+    padding: 50px;
+    background-color: rgba(56, 57, 59, 0.407);
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgb(102, 102, 102);
+}
+
+/* SOURCES */
+figure img {
+    width: min-content;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+figure p {
+    color: rgba(117, 117, 117, 0.215);
+}
+.sourcecap {
+    font-size: 15px;
+    color: rgba(117, 117, 117, 0.215);
+}
+
+/* MEDIA QUERY */
+@media ONLY screen AND (max-width: 1380px)  { 
+    header {
+        justify-content: center;
+    }
+    header {
+        text-align: center;
+    }
+    body:not(.aboutmepage) .missionvision {
+        justify-content: center;
+    }
+}
+@media ONLY screen AND (max-width: 1500px)  {
+    .tablepricing header {
+        justify-content: center;
+        text-align: center;
+    }
+    .missionvision {
+        justify-content: center;
+    }
+}
+@media ONLY screen AND (max-width: 1085px) {
+    .history {
+        flex-direction: column;
+    }
+    .originstory {
+        margin: 20px;
+    }
+}
+@media ONLY screen AND (max-width: 850px) {
+    nav {
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: aliceblue;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+    }
+    nav a {
+        height: 50px;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    header h1{
+        font-size: 115px;
+    }
+    .missionvision {
+        align-items: center;
+        flex-direction: column;
+    }
+    .titlehistory {
+        text-align: center;
+    }
+    header figure img {
+        width: 500px;
+    }
+    .mission, .vision{
+        width: 100%;
+    }
+}
