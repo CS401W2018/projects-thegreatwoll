@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sole SleekR Request</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Buy</a>
+        <a class="current" href="request.html">Request</a>
+        <a href="#">News</a>
+        <a href="pricelist.html">Pricelist</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <header>
+        <div class="title">
+            <h1>Request<br>Service</h1>
+            <p class="sourcecap">Photo by sadegh abdollahi</p>
+        </div>
+        <figure>
+            <img src="panda.png" alt="Nike Dunk Panda">
+        </figure>
+    </header>
+    <main id="formcontent">
+        <div id="message"></div>
+        <form action="index.html" method="get" id="myForm">
+            <fieldset id="requestform">
+                <h2>Sole SleekR Service Request</h2>
+                <p class="note">*required field</p>
+                <div class="form-row">
+                    <label for="firstname">First Name*</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Enter your first name" required>
+                </div>
+                <div class="form-row">
+                    <label for="lastname">Last Name*</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="contact">Contact*</label>
+                    <input type="tel" name="contact" id="contact" required>
+                </div>
+                <div class="select-row">
+                    <label for="shoetype">Shoe Type</label>
+                    <select name="shoetype" id="shoetype">
+                        <option value="blank" disabled selected>Select type of shoes</option>
+                        <option value="sneakers">Sneakers</option>
+                        <option value="trainers">Trainers</option>
+                        <option value="basketball">Basketball</option>
+                        <option value="football">Football</option>
+                        <option value="running">Running</option>
+                        <option value="tennis">Tennis</option>
+                        <option value="hiking">Hiking</option>
+                        <option value="leather">Leather</option>
+                        <option value="slides">Slides</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="brand">Brand</label>
+                    <input type="text" name="brand" id="brand">
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Service Type</div>
+                    <div class="options">
+                        <label><input type="radio" name="service" value="regular">Regular Wash</label>
+                        <label><input type="radio" name="service" value="deep">Deep Clean</label>
+                        <label><input type="radio" name="service" value="express">Express Clean</label>
+                        <label><input type="radio" name="service" value="dry">Dry Wash</label>
+                        <label><input type="radio" name="service" value="whiten">Super Whitening</label>
+                        <label><input type="radio" name="service" value="deodorize">Deodorize</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="servicedate">Preferred Date</label>
+                    <input type="date" name="servicedate" id="servicedate">
+                </div>
+                <div class="form-row">
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time">
+                </div>
+                <div class="form-textarea">
+                    <label for="instructions">Special Instructions</label>
+                    <textarea name="instructions" id="instructions"></textarea>
+                </div>
+                <div class="submitrow">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+            <figure class="formfigure">
+                <img src="formimage.jpg" alt="Man Cleaning Shoes">
+            </figure>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Errol Jon Rosaroso</p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
